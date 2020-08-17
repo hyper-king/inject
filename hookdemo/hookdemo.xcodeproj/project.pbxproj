@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C640647A24EA866400CC7D5C /* ihttphook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64D439124DC4B840001925B /* ihttphook.framework */; };
+		C640647B24EA866400CC7D5C /* ihttphook.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C64D439124DC4B840001925B /* ihttphook.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C64D431924DBB5840001925B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C64D431824DBB5840001925B /* AppDelegate.m */; };
+		C64D431C24DBB5840001925B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C64D431B24DBB5840001925B /* SceneDelegate.m */; };
+		C64D431F24DBB5840001925B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C64D431E24DBB5840001925B /* ViewController.m */; };
+		C64D432224DBB5840001925B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C64D432024DBB5840001925B /* Main.storyboard */; };
+		C64D432424DBB5870001925B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C64D432324DBB5870001925B /* Assets.xcassets */; };
+		C64D432724DBB5880001925B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C64D432524DBB5880001925B /* LaunchScreen.storyboard */; };
+		C64D432A24DBB5880001925B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C64D432924DBB5880001925B /* main.m */; };
+		C64D439524DC4B840001925B /* ihttphook.h in Headers */ = {isa = PBXBuildFile; fileRef = C64D439324DC4B840001925B /* ihttphook.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C64D439F24DC4B950001925B /* inject.h in Headers */ = {isa = PBXBuildFile; fileRef = C64D439D24DC4B950001925B /* inject.h */; };
+		C64D43A024DC4B950001925B /* inject.m in Sources */ = {isa = PBXBuildFile; fileRef = C64D439E24DC4B950001925B /* inject.m */; };
+		C6F7827024DF99B900AAE3AB /* SessionConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = C6F7826E24DF99B900AAE3AB /* SessionConfiguration.h */; };
+		C6F7827124DF99B900AAE3AB /* SessionConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F7826F24DF99B900AAE3AB /* SessionConfiguration.m */; };
+		C6F7827424DF99F600AAE3AB /* URLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = C6F7827224DF99F600AAE3AB /* URLProtocol.h */; };
+		C6F7827524DF99F600AAE3AB /* URLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F7827324DF99F600AAE3AB /* URLProtocol.m */; };
+		C6F7827824DF9A2800AAE3AB /* HttpCurl.h in Headers */ = {isa = PBXBuildFile; fileRef = C6F7827624DF9A2800AAE3AB /* HttpCurl.h */; };
+		C6F7827924DF9A2800AAE3AB /* HttpCurl.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F7827724DF9A2800AAE3AB /* HttpCurl.m */; };
+		C6F7827F24DF9AD700AAE3AB /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F7827D24DF9AC100AAE3AB /* libcrypto.a */; };
+		C6F7828024DF9AD700AAE3AB /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F7827B24DF9AC100AAE3AB /* libcurl.a */; };
+		C6F7828124DF9AD700AAE3AB /* libnghttp2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F7827E24DF9AC100AAE3AB /* libnghttp2.a */; };
+		C6F7828224DF9AD700AAE3AB /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F7827C24DF9AC100AAE3AB /* libssl.a */; };
+		C6F782D024DFA19300AAE3AB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F782CF24DFA19300AAE3AB /* libz.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C64D439624DC4B840001925B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C64D430C24DBB5830001925B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C64D439024DC4B840001925B;
+			remoteInfo = ihttphook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C640647C24EA866400CC7D5C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C640647B24EA866400CC7D5C /* ihttphook.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C64D431424DBB5840001925B /* hookdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hookdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C64D431724DBB5840001925B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C64D431824DBB5840001925B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C64D431A24DBB5840001925B /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		C64D431B24DBB5840001925B /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		C64D431D24DBB5840001925B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C64D431E24DBB5840001925B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C64D432124DBB5840001925B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C64D432324DBB5870001925B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C64D432624DBB5880001925B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C64D432824DBB5880001925B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C64D432924DBB5880001925B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C64D439124DC4B840001925B /* ihttphook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ihttphook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C64D439324DC4B840001925B /* ihttphook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ihttphook.h; sourceTree = "<group>"; };
+		C64D439424DC4B840001925B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C64D439D24DC4B950001925B /* inject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = inject.h; sourceTree = "<group>"; };
+		C64D439E24DC4B950001925B /* inject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = inject.m; sourceTree = "<group>"; };
+		C6F7826E24DF99B900AAE3AB /* SessionConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SessionConfiguration.h; sourceTree = "<group>"; };
+		C6F7826F24DF99B900AAE3AB /* SessionConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SessionConfiguration.m; sourceTree = "<group>"; };
+		C6F7827224DF99F600AAE3AB /* URLProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = URLProtocol.h; sourceTree = "<group>"; };
+		C6F7827324DF99F600AAE3AB /* URLProtocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = URLProtocol.m; sourceTree = "<group>"; };
+		C6F7827624DF9A2800AAE3AB /* HttpCurl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpCurl.h; sourceTree = "<group>"; };
+		C6F7827724DF9A2800AAE3AB /* HttpCurl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpCurl.m; sourceTree = "<group>"; };
+		C6F7827B24DF9AC100AAE3AB /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = libs/libcurl.a; sourceTree = "<group>"; };
+		C6F7827C24DF9AC100AAE3AB /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = libs/libssl.a; sourceTree = "<group>"; };
+		C6F7827D24DF9AC100AAE3AB /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = libs/libcrypto.a; sourceTree = "<group>"; };
+		C6F7827E24DF9AC100AAE3AB /* libnghttp2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libnghttp2.a; path = libs/libnghttp2.a; sourceTree = "<group>"; };
+		C6F782CF24DFA19300AAE3AB /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C64D431124DBB5840001925B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C640647A24EA866400CC7D5C /* ihttphook.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C64D438E24DC4B840001925B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6F782D024DFA19300AAE3AB /* libz.tbd in Frameworks */,
+				C6F7827F24DF9AD700AAE3AB /* libcrypto.a in Frameworks */,
+				C6F7828024DF9AD700AAE3AB /* libcurl.a in Frameworks */,
+				C6F7828124DF9AD700AAE3AB /* libnghttp2.a in Frameworks */,
+				C6F7828224DF9AD700AAE3AB /* libssl.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C64D430B24DBB5830001925B = {
+			isa = PBXGroup;
+			children = (
+				C64D431624DBB5840001925B /* hookdemo */,
+				C64D439224DC4B840001925B /* ihttphook */,
+				C64D431524DBB5840001925B /* Products */,
+				C6F7827A24DF9AC000AAE3AB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C64D431524DBB5840001925B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C64D431424DBB5840001925B /* hookdemo.app */,
+				C64D439124DC4B840001925B /* ihttphook.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C64D431624DBB5840001925B /* hookdemo */ = {
+			isa = PBXGroup;
+			children = (
+				C64D431724DBB5840001925B /* AppDelegate.h */,
+				C64D431824DBB5840001925B /* AppDelegate.m */,
+				C64D431A24DBB5840001925B /* SceneDelegate.h */,
+				C64D431B24DBB5840001925B /* SceneDelegate.m */,
+				C64D431D24DBB5840001925B /* ViewController.h */,
+				C64D431E24DBB5840001925B /* ViewController.m */,
+				C64D432024DBB5840001925B /* Main.storyboard */,
+				C64D432324DBB5870001925B /* Assets.xcassets */,
+				C64D432524DBB5880001925B /* LaunchScreen.storyboard */,
+				C64D432824DBB5880001925B /* Info.plist */,
+				C64D432924DBB5880001925B /* main.m */,
+			);
+			path = hookdemo;
+			sourceTree = "<group>";
+		};
+		C64D439224DC4B840001925B /* ihttphook */ = {
+			isa = PBXGroup;
+			children = (
+				C64D439324DC4B840001925B /* ihttphook.h */,
+				C64D439424DC4B840001925B /* Info.plist */,
+				C64D439D24DC4B950001925B /* inject.h */,
+				C64D439E24DC4B950001925B /* inject.m */,
+				C6F7826E24DF99B900AAE3AB /* SessionConfiguration.h */,
+				C6F7826F24DF99B900AAE3AB /* SessionConfiguration.m */,
+				C6F7827224DF99F600AAE3AB /* URLProtocol.h */,
+				C6F7827324DF99F600AAE3AB /* URLProtocol.m */,
+				C6F7827624DF9A2800AAE3AB /* HttpCurl.h */,
+				C6F7827724DF9A2800AAE3AB /* HttpCurl.m */,
+			);
+			path = ihttphook;
+			sourceTree = "<group>";
+		};
+		C6F7827A24DF9AC000AAE3AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6F782CF24DFA19300AAE3AB /* libz.tbd */,
+				C6F7827D24DF9AC100AAE3AB /* libcrypto.a */,
+				C6F7827B24DF9AC100AAE3AB /* libcurl.a */,
+				C6F7827E24DF9AC100AAE3AB /* libnghttp2.a */,
+				C6F7827C24DF9AC100AAE3AB /* libssl.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C64D438C24DC4B840001925B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6F7827424DF99F600AAE3AB /* URLProtocol.h in Headers */,
+				C64D439524DC4B840001925B /* ihttphook.h in Headers */,
+				C6F7827024DF99B900AAE3AB /* SessionConfiguration.h in Headers */,
+				C64D439F24DC4B950001925B /* inject.h in Headers */,
+				C6F7827824DF9A2800AAE3AB /* HttpCurl.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C64D431324DBB5840001925B /* hookdemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C64D432D24DBB5880001925B /* Build configuration list for PBXNativeTarget "hookdemo" */;
+			buildPhases = (
+				C64D431024DBB5840001925B /* Sources */,
+				C64D431124DBB5840001925B /* Frameworks */,
+				C64D431224DBB5840001925B /* Resources */,
+				C64D435624DBD7DD0001925B /* ShellScript */,
+				C640647C24EA866400CC7D5C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C64D439724DC4B840001925B /* PBXTargetDependency */,
+			);
+			name = hookdemo;
+			productName = hookdemo;
+			productReference = C64D431424DBB5840001925B /* hookdemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C64D439024DC4B840001925B /* ihttphook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C64D439A24DC4B840001925B /* Build configuration list for PBXNativeTarget "ihttphook" */;
+			buildPhases = (
+				C64D438C24DC4B840001925B /* Headers */,
+				C64D438D24DC4B840001925B /* Sources */,
+				C64D438E24DC4B840001925B /* Frameworks */,
+				C64D438F24DC4B840001925B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ihttphook;
+			productName = ihttphook;
+			productReference = C64D439124DC4B840001925B /* ihttphook.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C64D430C24DBB5830001925B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = com.aiceflower;
+				TargetAttributes = {
+					C64D431324DBB5840001925B = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					C64D439024DC4B840001925B = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = C64D430F24DBB5830001925B /* Build configuration list for PBXProject "hookdemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C64D430B24DBB5830001925B;
+			productRefGroup = C64D431524DBB5840001925B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C64D431324DBB5840001925B /* hookdemo */,
+				C64D439024DC4B840001925B /* ihttphook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C64D431224DBB5840001925B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C64D432724DBB5880001925B /* LaunchScreen.storyboard in Resources */,
+				C64D432424DBB5870001925B /* Assets.xcassets in Resources */,
+				C64D432224DBB5840001925B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C64D438F24DC4B840001925B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C64D435624DBD7DD0001925B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n./appsign.sh\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C64D431024DBB5840001925B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C64D431F24DBB5840001925B /* ViewController.m in Sources */,
+				C64D431924DBB5840001925B /* AppDelegate.m in Sources */,
+				C64D432A24DBB5880001925B /* main.m in Sources */,
+				C64D431C24DBB5840001925B /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C64D438D24DC4B840001925B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C64D43A024DC4B950001925B /* inject.m in Sources */,
+				C6F7827524DF99F600AAE3AB /* URLProtocol.m in Sources */,
+				C6F7827124DF99B900AAE3AB /* SessionConfiguration.m in Sources */,
+				C6F7827924DF9A2800AAE3AB /* HttpCurl.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C64D439724DC4B840001925B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C64D439024DC4B840001925B /* ihttphook */;
+			targetProxy = C64D439624DC4B840001925B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C64D432024DBB5840001925B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C64D432124DBB5840001925B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C64D432524DBB5880001925B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C64D432624DBB5880001925B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C64D432B24DBB5880001925B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C64D432C24DBB5880001925B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C64D432E24DBB5880001925B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DPUDK67XXP;
+				INFOPLIST_FILE = hookdemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = aiceflower.hookdemo123;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C64D432F24DBB5880001925B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DPUDK67XXP;
+				INFOPLIST_FILE = hookdemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = aiceflower.hookdemo123;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C64D439B24DC4B840001925B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = DPUDK67XXP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/include";
+				INFOPLIST_FILE = ihttphook/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = aiceflower.ihttphook;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C64D439C24DC4B840001925B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = DPUDK67XXP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/include";
+				INFOPLIST_FILE = ihttphook/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = aiceflower.ihttphook;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C64D430F24DBB5830001925B /* Build configuration list for PBXProject "hookdemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C64D432B24DBB5880001925B /* Debug */,
+				C64D432C24DBB5880001925B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C64D432D24DBB5880001925B /* Build configuration list for PBXNativeTarget "hookdemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C64D432E24DBB5880001925B /* Debug */,
+				C64D432F24DBB5880001925B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C64D439A24DC4B840001925B /* Build configuration list for PBXNativeTarget "ihttphook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C64D439B24DC4B840001925B /* Debug */,
+				C64D439C24DC4B840001925B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C64D430C24DBB5830001925B /* Project object */;
+}
