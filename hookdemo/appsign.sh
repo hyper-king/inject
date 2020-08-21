@@ -53,16 +53,16 @@ fi
 #./yololib "$TARGET_APP_PATH/$APP_BINARY" "/Users/alonglamp/Library/Developer/Xcode/DerivedData/httptest-eplnkodwxcloomfebhhoeobsdtko/Build/Products/Debug-iphonesimulator/ihttphook.framework/ihttphook"
 ./yololib "$TARGET_APP_PATH/$APP_BINARY" "Frameworks/ihttphook.framework/ihttphook"
 
-cd ${BUILD_DIR}/${CONFIGURATION}-iphoneos
+#cd ${BUILD_DIR}/${CONFIGURATION}-iphoneos
  #${PROJECT_NAME}是Xcode的一个环境变量
- PAYLOAD='Payload'
+# PAYLOAD='Payload'
 
  # 这里的-d 参数判断$PAYLOAD是否存在
- if [ ! -d "$PAYLOAD" ]
- then
- mkdir $PAYLOAD
- fi
- cp -r ./${PROJECT_NAME}.app $PAYLOAD
- zip -q -r ${PROJECT_NAME}.ipa $PAYLOAD
+# if [ ! -d "$PAYLOAD" ]
+# then
+# mkdir $PAYLOAD
+# fi
+# cp -r ./${PROJECT_NAME}.app $PAYLOAD
+# zip -q -r ${PROJECT_NAME}.ipa $PAYLOAD
  #在Finder中打开，在使用中可暂时注释掉避免每次都打开
- open -R .
+# open -R .
